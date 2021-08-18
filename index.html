@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Drumkit</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+
+<body>
+   
+    <!-- Data-key is a Attribute -->
+    <div class="outer">
+        <div class="circle" id="circle">
+            <button id="open"><i class="fas fa-bars"></i></button>
+            <button id="close"> <i class="fas fa-times"></i> </button>
+        </div>
+        <div class="con">
+            
+            <div data-key="65" class="key">
+        <kbd>A </kbd>
+        <span class='sound'>Sparkle</span>
+        
+    </div>
+    
+    <div data-key="83" class="key">
+        <kbd>S </kbd>
+        <span class='sound'>Kronicle</span>
+    </div>
+    
+    <div data-key="68" class="key">
+        <kbd>D </kbd>
+        <span class='sound'>The Improv</span>
+    </div>
+    
+    <div data-key="70" class="key" >
+        <kbd>F  </kbd>
+        <span class='sound'>NF Karaoke</span>
+    </div>
+    
+    <div data-key="71" class="key">
+        <kbd>G </kbd>
+        <span class='sound'>1 sec Music</span>
+    </div>
+    
+    <div class="pause">
+        <span>Press P to Pause</span>
+    </div>
+</div>
+</div>
+<nav class="data" id="nav">
+    <ul>
+        <li></li>
+        <li> <i class="fas fa-home"></i> HOME </li>
+        <li> <i class="fas fa-address-book"></i></i> CONTACT</li>
+        <li> <i class="fas fa-user"></i> USER </li>
+    </ul>
+</nav>
+
+<script src="script.js"></script>
+</body>
+
+</html>

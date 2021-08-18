@@ -1,0 +1,173 @@
+/* CSS RESET  */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #a40606;
+    background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
+    
+    overflow-x: hidden;
+}
+nav.data{
+    visibility: hidden;
+}
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    position: absolute;
+    bottom: 40px;
+    right: 10px;
+    list-style: none;
+    color: white;
+    font-size: 25px;
+
+    cursor: pointer;
+}
+nav ul li+li{
+    position: absolute;
+    bottom: 40px;
+    right: 10px;
+    list-style: none;
+    color: white;
+    font-size: 25px;
+    margin:40px 40px;
+    transition: transform .5s ease-out 0.2s;
+}
+
+nav ul li+li+li{
+    position: absolute;
+    bottom: 40px;
+    right: 10px;
+    list-style: none;
+    color: white;
+    font-size: 25px;
+    margin: 30px 230px;
+    transition: transform .5s ease-out 0.2s;
+}
+nav ul li+li+li+li{
+    position: absolute;
+    bottom: 40px;
+    right: 10px;
+    list-style: none;
+    color: white;
+    font-size: 25px;
+    margin: 20px 480px;
+    transition: transform .5s ease-out 0.2s;
+}
+
+nav.data ul li+li{
+    transform: translateX(700%)
+}
+nav.data ul li+li+li{
+    transform: translateX(700%)
+}
+nav.data ul li+li+li+li{
+    transform: translateX(700%)
+}
+
+.outer{
+    
+    transition: all .5s ease-out;
+}
+.circle{
+    position: fixed;
+    background-color: orangered;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    border-radius: 50%;
+    /* border: 2px solid black; */
+    transition: transform .5s linear;
+}
+.circle button#open{
+    position: relative;
+    top: 130px;
+    left: 125px;
+}
+ .circle button#close{
+    position: relative;
+    top: 115px;
+    left: 15px;
+    transform: rotate(100deg);
+  
+} 
+button{
+    font-size: 26px;
+    padding: -30px;
+    background: transparent;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+.circle.rotate{
+    transform: rotate(-90deg);
+    /* transform-origin: center; */
+}
+.outer::before{
+    content: "";
+    position: absolute;
+    background: url(mic.jpg);
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+.con{
+    height: 100vh;
+    /* border:  2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.outer.active{
+    transform: rotate(-10deg);
+    transform-origin: left top;
+}
+
+.pause{
+  
+    font-size: 20px;
+    border: 2px solid rgb(199 252 7 / 36%);
+    position: absolute;
+    top: 200px;
+    right: 682px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #332c33e6;
+}
+.pause span{
+    color: white;
+}
+
+
+
+.key{
+    cursor: pointer;
+    color: white;
+    font-weight: bolder;
+    border: 2px solid gray;
+    font-size: 1.7em;
+    padding: 10px 10px;
+    background-color: #332c334d;
+    margin: 10px 40px;
+    transition: all 0.5s;
+}
+kbd{
+    text-align: center;
+    display: block;
+    font-size: 0.8em;
+}
+
+.playing{
+    transform: scale(1.3);
+border: 3px solid rgb(199, 252, 7);
+
+}
